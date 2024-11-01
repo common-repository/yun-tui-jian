@@ -1,0 +1,21 @@
+<div class="wrap">
+<h2><?php echo $aliyunRecLanguage['product_name'];?></h2>
+<?php if(isset($_POST ['state'])) {?>
+<div class="updated" id="message"><p><?php echo $aliyunRecLanguage['success_msg'];?></p></div>
+<?php }?>
+<form action="" method="post" name="form1">
+<table class="form-table">
+<tbody>
+<tr>
+<th scope="row"><?php echo $aliyunRecLanguage['state'];?></th>
+<td><fieldset>
+<label><input type="radio" value="1" name="state" <?php echo $openCheck;?> /> <?php echo $aliyunRecLanguage['switch_on'];?></label>
+<label><input type="radio" value="0" name="state" <?php echo $closeCheck;?>/> <?php echo $aliyunRecLanguage['switch_off'];?></label>
+</fieldset></td>
+</tr>
+</tbody></table>
+<p class="submit"><input type="submit" value="<?php echo $aliyunRecLanguage['submit'];?>" class="button-primary" name="submit"></p></form>
+<div id="aliyunrec_notice">
+<iframe src="http://plugin.tui.cnzz.com/?a=notice&v=<?php echo ALIYUNREC_VERSION;?>" frameborder="0" name="aliyunrec_notice_frame" scrolling="auto" height="500" width="100%"></iframe>
+</div>
+</div>
